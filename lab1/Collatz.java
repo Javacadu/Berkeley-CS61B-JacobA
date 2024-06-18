@@ -4,7 +4,7 @@
 public class Collatz {
 
     /** nextNumber returns the next number in the Collatz sequence
-     * the Collatz sequence is as follows:
+     * the next number is determined as follows:
      *                      if n is even the next number will be n/2
      *                      if n is odd the next number will be 3n + 1
      *                      if n is 1 then the sequence is over**/
