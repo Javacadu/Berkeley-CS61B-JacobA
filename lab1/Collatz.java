@@ -1,19 +1,23 @@
 /** Class that prints the Collatz sequence starting from a given number.
- *  @author YOUR NAME HERE
+ *  @author Jacob Atanacio
  */
 public class Collatz {
 
-    /** Buggy implementation of nextNumber! */
+    /** nextNumber returns the next number in the Collatz sequence
+     * the Collatz sequence is as follows:
+     *                      if n is even the next number will be n/2
+     *                      if n is odd the next number will be 3n + 1
+     *                      if n is 1 then the sequence is over**/
     public static int nextNumber(int n) {
-        if (n  == 128) {
-            return 1;
-        } else if (n == 5) {
-            return 3 * n + 1;
+        if (n  % 2 == 0) {
+            return n/2;
+        } else if (n == 1) {
+            return 0;
         } else {
-            return n * 2;
+            return 3 * n + 1;
         }
     }
-
+    /** Program should print 5 16 8 4 2 1 when n = 5 */
     public static void main(String[] args) {
         int n = 5;
         System.out.print(n + " ");
